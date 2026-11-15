@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --forest: #145A46;
+  --emerald: #19A77A;
+  --ivory: #F8F5EF;
+  --charcoal: #252B29;
+  --sage: #DDEBE3;
+  --gold: #C9A96E;
+  --white: #FFFFFF;
+}
+
+body {
+  background-color: var(--ivory);
+  color: var(--charcoal);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F5EF;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4DBD0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #19A77A;
+}
+
+/* Glassmorphism & Gradient Accents */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(221, 235, 227, 0.6);
+}
+
+.emerald-gradient {
+  background: linear-gradient(135deg, #145A46 0%, #19A77A 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #C9A96E 0%, #DFC79B 100%);
+}
+
